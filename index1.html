@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="" />
+    <style>
+    #calculator{
+            position: relative;
+            width: 400px;
+            border: 2px solid black;
+            border-radius: 12px;
+            margin: 0px auto;
+            padding: 20px 20px 100px 20px;
+            background-color: #1a253ac4;
+            
+          }
+          #agh{
+            position: relative;
+            float: right;
+            margin-top: 15px;
+          }
+          #agh p{
+            font-size: 20px;
+            font-weight: 900;
+          }
+          input[type=button] {
+            background: lightGray;
+            width: 10%;
+            font-size: 20px;
+            font-weight: 900;
+            border-radius: 7px;
+            margin-left: 50px;
+            margin-top: 10px;
+            padding:5px;
+          }
+          input[type=button]:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+          }
+          input[type=button]:hover {
+            background-color: #003300;
+            color: white;
+          }
+          
+          input[type = text] {
+            position: relative;
+            display: block;
+            margin-left: 70px;
+            font-size: 20px;
+            padding: 10px;
+            margin-top: 150px;
+            box-shadow: 4px 0px 12px black inset;
+            
+          }</style>
+</head>
+<body>
+
+        <form id="calculator" name="cal">     
+                <input id="display" type="text" name="answer"style="" placeholder="0" />
+                <br>
+               <div>
+                <input style="margin-left:250px; width:30%;" type="button" value=" c " onclick="document.getElementById('display').value=''" />  
+               </div> 
+                <br>
+                
+                <input type="button" value=" 1 " onclick="one();" />
+                <input type="button" value=" 2 " onclick="two();" />
+                <input type="button" value=" 3 " onclick="three();" />
+                <input type="button" value=" + " onclick="addition();" />
+                <br/>
+                
+                <input type="button" value=" 4 " onclick="four();" />
+                <input type="button" value=" 5 " onclick="five();" />
+                <input type="button" value=" 6 " onclick="six();" />
+                <input type="button" value=" - " onclick="subtraction();" />
+                </br>
+              
+                <input type="button" value=" 7 " onclick="seven();" />
+                <input type="button" value=" 8 " onclick="eight();" />
+                <input type="button" value=" 9 " onclick="nine();" />
+                <input type="button" value=" x " onclick="times();" />
+                </br>
+
+                <input type="button" value=" 0 " onclick="zero();" />
+                <input type="button" value=" . " onclick="decimal();" />
+                <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value);" /> 
+               <!-- <input type="button" value=" = " onclick="add();" />   -->
+                <input type="button" value=" / " onclick="divides();" />
+               
+        
+                </br>
+                <div id="agh">
+                  <p>Pangsui Linge's Calculator
+                </div>
+        
+              </form>
+              
+            </div>
+  <script src="main.js"></script>  
+</body>
+</html>
